@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "C4A9D6E03B88DEB910BC89C2A52DC20C42FC2974",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "C4A9D6E03B88DEB910BC89C2A52DC20C42FC2974" : 9223372036854775807,
+    "1E23FE5B0D4C02FED695F30E1FD3A45E5F6DB933" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "E0734CB6-7A9C-4663-A724-60D27467997E",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "C4A9D6E03B88DEB910BC89C2A52DC20C42FC2974" : "SayIt\/",
+    "1E23FE5B0D4C02FED695F30E1FD3A45E5F6DB933" : "SayIt\/spm\/.build\/checkouts\/swift-language-detector.git-5541725375861549904\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "SayIt",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "SayIt.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "\/Users\/dan\/dev\/sayittmp\/SayIt\/spm\/.build\/repositories\/swift-language-detector.git-5541725375861549904",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "1E23FE5B0D4C02FED695F30E1FD3A45E5F6DB933"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/d-a-n\/SayIt.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "C4A9D6E03B88DEB910BC89C2A52DC20C42FC2974"
+    }
+  ]
+}
