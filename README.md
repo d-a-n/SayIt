@@ -9,6 +9,8 @@ Open SayIt, select text in any application (e.g Safari) and press `option` + `s`
 
 To install more voices for different languages, go to `System Preference` -> `Accessibility` -> `Speech` -> `System Voice` -> `Customize`.
 
+<img src="https://user-images.githubusercontent.com/1060397/29254179-fcfd30a4-808f-11e7-9c37-50703941448c.png" width="400" >
+
 ## Download
 
 [SayIt.app](https://github.com/d-a-n/SayIt/releases/latest) (latest version)
