@@ -4,6 +4,7 @@ xcode_scheme: SayIt-Release
 language: objective-c
 before_install:
 - "./build.sh"
+script: echo "done"
 after_success:
 - cd ./build/Build/Products/Release
 - zip -9r SayIt.zip SayIt.app
