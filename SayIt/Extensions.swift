@@ -7,6 +7,13 @@ extension String {
     func trim() -> String {
         return self.trimmingCharacters(in: .whitespacesAndNewlines)
     }
+    func replace(pattern: String, replacement: String = "") -> String {
+        let regex = try! NSRegularExpression(pattern: pattern, options: .caseInsensitive)
+        return regex.stringByReplacingMatches(in: self, options: [], range: NSRange(0..<self.utf16.count), withTemplate: replacement)
+    }
+    func removeBrackets() -> String {
+        return self.replace(pattern: "\\[[^]]*\\]")
+    }
 }
 
 extension Sequence where Iterator.Element == String {

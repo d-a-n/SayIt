@@ -5,7 +5,6 @@ import LanguageDetector
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate, NSSpeechSynthesizerDelegate {
     
-    
     fileprivate let hotKeyCenter = HotKeyCenter.sharedInstance
     fileprivate let ttsProcessor = TTSProcessor.sharedInstance
     fileprivate let textGrabber = TextGrabber.sharedInstance
@@ -14,7 +13,9 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSSpeechSynthesizerDelegate 
         textGrabber.saveSelectedTextToClipboard()
         let timeout = DispatchTime.now() + 0.25
         DispatchQueue.main.asyncAfter(deadline: timeout) {
-            let text = self.textGrabber.getText()
+            let text = self.textGrabber
+                .getText()
+                .removeBrackets()
             let textChunks = text
                 .splitByParagraph()
                 .trimItems()

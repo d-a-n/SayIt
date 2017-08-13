@@ -7,7 +7,7 @@ class HotKeyCenter: NSObject
     
     private override init() {
         super.init()
-        hotKey = HotKey(keyCode: kVK_ANSI_G, modifiers: controlKey, block: {
+        hotKey = HotKey(keyCode: kVK_ANSI_S, modifiers: optionKey, block: {
             NotificationCenter.default.post(name: Notification.Name("HotKeyPressed"), object: nil)
         })
     }
