@@ -1,4 +1,3 @@
-
 import Cocoa
 import Carbon
 
@@ -22,7 +21,6 @@ class HotKey {
         
         InstallEventHandler(GetApplicationEventTarget(), eventHandlerUPP, 1, &eventType, ptr, &eventHandler)
         RegisterEventHotKey(UInt32(keyCode), UInt32(modifiers), hotKeyID, GetApplicationEventTarget(), OptionBits(kEventHotKeyExclusive), &hotKey)
-        print("hotKey: \(hotKey)")
     }
     
     deinit {
