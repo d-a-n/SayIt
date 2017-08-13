@@ -2,9 +2,7 @@ osx_image: xcode8.3
 xcode_project: SayIt.xcodeproj
 xcode_scheme: SayIt-Release
 language: objective-c
-before_install:
-- "./build.sh"
-script: echo "done"
+script: ./build.sh
 after_success:
 - cd ./build/Build/Products/Release
 - zip -9r SayIt.zip SayIt.app
