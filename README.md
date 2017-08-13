@@ -5,6 +5,10 @@
 
 Open SayIt, select text in any application (e.g Safari) and press `option` + `s`. SayIt detects the language of the text and starts reading the text in the proper voice. SayIt will even switch voices when it detects another language in the currently selected text. So when you select a text with mixed languages, SayIt will always ensure to pick the right system voice.   
 
+### Install voices
+
+To install more voices for different languages, go to `System Preference` -> `Accessibility` -> `Speech` -> `System Voice` -> `Customize`.
+
 ## Download
 
 [SayIt.app](https://github.com/d-a-n/SayIt/releases/latest) (latest version)
