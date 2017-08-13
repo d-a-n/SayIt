@@ -1,0 +1,25 @@
+osx_image: xcode8.3
+xcode_project: SayIt.xcodeproj
+xcode_scheme: SayIt-Release
+language: objective-c
+before_install:
+- "./build.sh"
+after_success:
+- cd ./build/Build/Products/Release
+- zip -9r SayIt.zip SayIt.app
+- cd -
+- mv ./build/Build/Products/Release/SayIt.zip .
+branches:
+  only:
+  - "/^(?i:master)$/"
+deploy:
+  skip_cleanup: true
+  provider: releases
+  api_key:
+    secure: O/mP1OM3rEFc72X+4fi7MOcDlcms+jQTVe2B9D0Le6IHcXzNxfsawqQ8q+mJjCoGmB6WRpD3hH4An0eQF0Qqq1ye922pPi8/Jlm4vUODtBSDWf1zpqd6xaAIolDUTTW9zpDmaAlLg7g8jOdCsF2d9+mNggFAo59HYJXdGxx3tRzsPW8hiAO3zlTydwqs9OjunwJc4L6UoJU4Bl5185299I9ToRzcVQdkq1eM88UQRXLQMNdNz85HRtvJ2UHSFi7rG+kMcowgR+MpeWmFqQOmzk57+rUctxA8U16C7uz7UI6XFiHK15jLlXmk1dutBB5RvwlMDCpyJqIQn+4Ykj2evCdWdO0hTfLtZqVR76nB0i8f6naA8chruoVTuVBonIg/p1L4foUk+CUgtqpBoQhq1Bd0H+ZvUrAnlIcTpdYoutnEWOw1dgMuzO/f1rYHAyrKqddq+Gsw+3q1K56q1Vruv0G0cA6qsgTBt+YtcrAOCiAh8MSgyNGdxXyqduvUqZwAePAJL+nwIXHO47/ithD7in9FbrvuRZMYRh6y3Yuk99SacWh9i65lQXTo+xXkftjjHZe9Uds6zE/RDEvnBsZJsnU7e0DqaJP97DEUZ1ftReTWvONqxXJtktZCuuoUyhxdAszjeK6xb5DBrBmAmN2LIuxYWfmYryqETodfQ1Wj1KA=
+  file: SayIt.zip
+  overwrite: true
+  on:
+    tags: true
+    repo: d-a-n/SayIt
+    branch: master
