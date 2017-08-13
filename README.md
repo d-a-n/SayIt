@@ -16,4 +16,4 @@ To install more voices for different languages, go to `System Preference` -> `Ac
 [SayIt.app](https://github.com/d-a-n/SayIt/releases/latest) (latest version)
 
 ## License
-MIT
+![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)
