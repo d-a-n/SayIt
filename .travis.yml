@@ -10,9 +10,6 @@ after_success:
 - zip -9r SayIt.zip SayIt.app
 - cd -
 - mv ./build/Build/Products/Release/SayIt.zip .
-branches:
-  only:
-  - "/^(?i:master)$/"
 deploy:
   skip_cleanup: true
   provider: releases
@@ -23,3 +20,4 @@ deploy:
   on:
     tags: true
     repo: d-a-n/SayIt
+    all_branches: true
