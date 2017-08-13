@@ -7,7 +7,7 @@ Open SayIt, select text in any application (e.g Safari) and press `option` + `s`
 
 ## Download
 
-[Download latest version](https://github.com/d-a-n/SayIt/releases/latest)
+[SayIt.app](https://github.com/d-a-n/SayIt/releases/latest) (latest version)
 
 ## License
 MIT
