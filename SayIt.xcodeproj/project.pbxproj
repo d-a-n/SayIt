@@ -11,13 +11,13 @@
 		371353751F40841600D68FE8 /* StatusMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371353741F40841600D68FE8 /* StatusMenuController.swift */; };
 		3732AB971F4074D400B8BCDD /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3732AB961F4074D400B8BCDD /* Extensions.swift */; };
 		375308381F40F984001668D6 /* LanguageDetector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 375308341F40F971001668D6 /* LanguageDetector.framework */; };
-		3753083C1F40FAA4001668D6 /* LanguageDetector.framework in Resources */ = {isa = PBXBuildFile; fileRef = 375308341F40F971001668D6 /* LanguageDetector.framework */; };
 		375635BE1F3FB5B400B06F2B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 375635BD1F3FB5B400B06F2B /* AppDelegate.swift */; };
 		375635C21F3FB5B400B06F2B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 375635C11F3FB5B400B06F2B /* Assets.xcassets */; };
 		375635CD1F3FB5F900B06F2B /* HotKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 375635CC1F3FB5F900B06F2B /* HotKey.swift */; };
 		379712911F405206006B8B41 /* TTSProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379712901F405206006B8B41 /* TTSProcessor.swift */; };
 		379712931F406A34006B8B41 /* TextGrabber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379712921F406A34006B8B41 /* TextGrabber.swift */; };
 		379712951F406BF5006B8B41 /* HotKeyCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379712941F406BF5006B8B41 /* HotKeyCenter.swift */; };
+		37AC7C8C1F410BCD00AFD346 /* LanguageDetector.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 375308341F40F971001668D6 /* LanguageDetector.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +36,19 @@
 			remoteInfo = spm;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		37AC7C8B1F410BC100AFD346 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				37AC7C8C1F410BCD00AFD346 /* LanguageDetector.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		371353721F40839200D68FE8 /* Main.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Main.xib; sourceTree = "<group>"; };
@@ -117,6 +130,7 @@
 				375635B61F3FB5B400B06F2B /* Sources */,
 				375635B71F3FB5B400B06F2B /* Frameworks */,
 				375635B81F3FB5B400B06F2B /* Resources */,
+				37AC7C8B1F410BC100AFD346 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -191,7 +205,6 @@
 			files = (
 				371353731F40839200D68FE8 /* Main.xib in Resources */,
 				375635C21F3FB5B400B06F2B /* Assets.xcassets in Resources */,
-				3753083C1F40FAA4001668D6 /* LanguageDetector.framework in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
